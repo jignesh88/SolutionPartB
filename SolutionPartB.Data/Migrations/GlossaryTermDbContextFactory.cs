@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 
-namespace SolutionPartB.Data.Migration
+namespace SolutionPartB.Data.Migrations
 {
     public class GlossaryTermDbContextFactory : IDesignTimeDbContextFactory<GlossaryTermDBContext>
     {
@@ -17,6 +17,7 @@ namespace SolutionPartB.Data.Migration
               .Build();
 
             builder.UseSqlServer(configuration.GetConnectionString("Defa​ultConnection"));
+
             return new GlossaryTermDBContext(builder.Options);
         }
     }

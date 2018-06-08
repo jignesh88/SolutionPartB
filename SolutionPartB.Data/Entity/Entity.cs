@@ -1,9 +1,8 @@
 ﻿using System;
-namespace SolutionPartB.Data.Entitry
+namespace SolutionPartB.Data.Entity
 {
     public abstract class Entity
     {
-        public Guid Id { get; set; }
-        public DateTime CreateDate { get; set; }
+        public DateTime CreatedDate { get; set; }
     }
 }

@@ -3,7 +3,7 @@ using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.SqlServer;
-namespace SolutionPartB.Data.Migraion
+namespace SolutionPartB.Data.Migraions
 {
     public partial class InitialCreate : Migration
     {
